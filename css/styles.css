@@ -13,11 +13,51 @@
     --shadow: rgba(0, 0, 0, 0.15)
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding-left: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+address {
+    font-style: normal;
+}
+
+img {
+    display: block;
+}
+
 body {
     font-family: 'Roboto', 'Open sans', sans-serif;
     font-size: 16px;
     color: var(--main-text);
     background: var(--main-bg);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1188px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    outline: 2px solid red;
 }
 
 .link {
@@ -28,14 +68,14 @@ body {
     list-style: none;
 }
 
-.button {
+.hero-button,
+.filters-button {
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     border-radius: 4px;
-    cursor: pointer;
 }
 
 /* Hidden header pattern */
@@ -54,6 +94,12 @@ body {
 
 /* ------------------------------------ */
 /* HEADER */
+
+.header {
+    background-color: #fff;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
 
 /* Site Logo */
 .logo {
@@ -86,7 +132,6 @@ body {
 }
 
 .address .link {
-    font-style: normal;
     /* font-size: 16px; */
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -103,10 +148,14 @@ body {
 
 /* ------------------------------------ */
 /* Main PAGE */
+/* Section HERO */
 
 .hero {
     background: var(--heading);
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
+
 
 /* Hero Title */
 .hero-title {
@@ -115,32 +164,59 @@ body {
     line-height: 1.07;
     letter-spacing: 0.02em;
     color: var(--main-bg);
+
+    margin-bottom: 48px;
 }
 
 /* Hero Button */
-.hero .button {
+.hero-button {
     color: var(--main-bg);
+
     background: var(--brand);
+    padding: 16px 32px;
     /* box-shadow: 0px 4px 4px var(--shadow); */
 }
 
-.hero .button:hover,
-.hero .button:focus,
-.hero .button.current {
+.hero-button:hover,
+.hero-button:focus,
+.hero-button.current {
     background: var(--pressed);
 }
 
-/* Section */
-.section {
+/* Sections */
+.features,
+.directions,
+.projects {
     background-color: var(--main-bg);
 }
 
-.section.team {
+.features {
+    padding-top: 188px;
+    padding-bottom: 120px;
+}
+
+.directions {
+    padding-top: 0;
+    padding-bottom: 120px;
+}
+
+.members {
     background-color: var(--light-bg);
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.projects {
+    padding-top: 96px;
+    padding-bottom: 120px;
 }
 
 /* Header 2 */
-.section-title {
+.features-title,
+.directions-title,
+.members-title,
+.filters-title,
+.cards-title {
     /* font-weight: 700; */
     font-size: 36px;
     line-height: 1.11;
@@ -149,6 +225,15 @@ body {
     color: var(--heading);
 }
 
+.directions-title,
+.members-title {
+    margin-bottom: 72px;
+}
+
+/* Image */
+.pic {}
+
+
 /* Header 3 */
 .title {
     font-weight: 500;
@@ -156,6 +241,8 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--heading);
+
+    margin-bottom: 8px;
 }
 
 /* Paragraph */
@@ -166,7 +253,7 @@ body {
     letter-spacing: 0.02em;
 }
 
-.member {
+.members-item {
     background-color: var(--main-bg);
 }
 
@@ -174,17 +261,36 @@ body {
 /* Portfolio PAGE */
 
 /* List of Filters Buttons */
-.filter .button {
+.filters-list {
+    margin-bottom: 72px;
+}
+
+.filters-button {
     color: var(--brand);
     background: var(--light-bg);
     border: 1px solid var(--accent);
 }
 
-.filter .button:hover,
-.filter .button:focus,
-.filter .button.current {
+.filters-button:hover,
+.filters-button:focus,
+.filters-button.current {
     color: var(--main-bg);
     background: var(--pressed);
+}
+
+.directions-item,
+.cards-item {
+    /* border: 1px solid var(--accent) */
+}
+
+.capture {
+    height: 120px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.cards-capture {
+    padding-left: 16px;
 }
 
 /* ------------------------------------ */
@@ -192,12 +298,19 @@ body {
 
 .footer {
     background-color: var(--heading);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.footer .logo {
+    margin-bottom: 16px;
 }
 
 .footer .logo-studio {
     color: var(--light-bg);
 }
 
-.footer .text {
+.footer-text {
+    width: 264px;
     color: var(--accent);
 }
