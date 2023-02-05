@@ -53,7 +53,7 @@ body {
 
 .container {
     width: 100%;
-    max-width: 1188px;
+    max-width: 1158px;
 
     padding-left: 15px;
     padding-right: 15px;
@@ -168,13 +168,42 @@ body {
     letter-spacing: 0.02em;
     color: currentColor;
     /* color: var(--main-text); */
-
 }
 
 .address-link:hover,
 .address-link:focus,
 .address-link.current {
     color: var(--pressed)
+}
+
+/* Header 2 */
+.heading {
+    /* font-weight: 700; */
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-align: center;
+    color: var(--heading);
+}
+
+/* Header 3 */
+.title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--heading);
+
+    margin-bottom: 8px;
+}
+
+/* Paragraph */
+.text {
+    /* font-size: 16px; */
+    /* color: var(--main-text); */
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 /* ------------------------------------ */
@@ -198,7 +227,7 @@ body {
     letter-spacing: 0.02em;
     text-align: center;
     color: var(--main-bg);
-    /* ??? */
+
     margin: 0 auto;
     margin-bottom: 48px;
 }
@@ -221,95 +250,73 @@ body {
     background: var(--pressed);
 }
 
-/* Sections */
-/* .features,
-.directions,
-.projects {
-    background-color: var(--main-bg);
-} */
-
+/* Section Features */
 .features {
     padding-top: 188px;
     padding-bottom: 120px;
 }
 
+.features-list {
+    display: flex;
+    gap: 24px;
+}
+
+/* Section Directions */
 .directions {
     padding-top: 0;
     padding-bottom: 120px;
 }
 
-.members {
+.directions-title {
+    margin-bottom: 72px;
+}
+
+.directions-list {
+    display: flex;
+    gap: 24px;
+}
+
+/* Section Team */
+.team {
     background-color: var(--light-bg);
     padding-top: 120px;
     padding-bottom: 120px;
 }
 
+.team-title {
+    margin-bottom: 72px;
+}
+
+.team-list {
+    display: flex;
+    gap: 24px;
+}
+
+/* Section Projects */
 .projects {
     padding-top: 96px;
     padding-bottom: 120px;
 }
 
-/* Header 2 */
-.features-title,
-.directions-title,
-.members-title,
-.filters-title,
-.cards-title {
-    /* font-weight: 700; */
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
+.team-item-name {
     text-align: center;
-    color: var(--heading);
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
-.directions-title,
-.members-title {
-    margin-bottom: 72px;
-}
-
-
-.features-list,
-.directions-list,
-.members-list,
-.cards-list {
-    display: flex;
-    column-gap: 24px;
-}
-
-.cards-list {
-    flex-wrap: wrap;
-    row-gap: 48px;
-}
-
-/* Header 3 */
-.title {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: var(--heading);
-
-    margin-bottom: 8px;
-}
-
-/* Paragraph */
-.text {
-    /* font-size: 16px; */
-    /* color: var(--main-text); */
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-}
-
-.members-item {
+.team-item {
     background-color: var(--main-bg);
 }
 
-/* ------------------------------------ */
+.team-item-name {
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+
 /* Portfolio PAGE */
 
-/* List of Filters Buttons */
 .filters-list {
     display: flex;
     gap: 24px;
@@ -335,29 +342,22 @@ body {
     background-color: var(--pressed);
 }
 
-.directions-item,
-.cards-item {
-    border: 1px solid var(--accent)
+.gallery-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
 }
 
-.members-capture {
-    text-align: center;
+.gallery-item {
+    width: calc((100% - 48px) / 3);
 }
 
-.cards-item {
-    /* width: calc((100% - 24px) / 3); */
-}
-
-.capture {
-    /* height: 120px; */
-
+.gallery-item-name {
     padding-top: 32px;
     padding-bottom: 32px;
-    /* outline: 1px solid black; */
-}
-
-.cards-capture {
     padding-left: 16px;
+    border: 1px solid var(--accent)
 }
 
 /* ------------------------------------ */
