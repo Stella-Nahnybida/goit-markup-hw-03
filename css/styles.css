@@ -292,30 +292,24 @@ body {
     gap: 24px;
 }
 
-/* Section Projects */
-.projects {
-    padding-top: 96px;
-    padding-bottom: 120px;
-}
-
-.team-item-name {
-    text-align: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
-}
-
 .team-item {
     background-color: var(--main-bg);
 }
 
 .team-item-name {
     text-align: center;
+
     padding-top: 32px;
     padding-bottom: 32px;
 }
 
+/* PORTFOLIO PAGE */
 
-/* Portfolio PAGE */
+/* Section Projects */
+.projects {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
 
 .filters-list {
     display: flex;
