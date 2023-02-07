@@ -219,7 +219,7 @@ body {
 /* Hero Title */
 .hero-title {
     /* ??? */
-    max-width: 495px;
+    max-width: 496px;
 
     font-weight: 700;
     font-size: 56px;
@@ -252,13 +252,17 @@ body {
 
 /* Section Features */
 .features {
-    padding-top: 188px;
+    padding-top: 120px;
     padding-bottom: 120px;
 }
 
 .features-list {
     display: flex;
     gap: 24px;
+}
+
+.features-item {
+    width: 264px;
 }
 
 /* Section Directions */
